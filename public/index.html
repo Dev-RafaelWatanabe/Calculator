@@ -6,34 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/images/calculator-svgrepo-com.svg">
     <link rel="stylesheet" href="/public/styles.css">
-    <link rel="stylesheet" href="/public/app.js">
     <title>Calculator</title>
 </head>
 <body>
+    <script src="/public/app.js"></script>
     <div class="Calculator">
         <div id="calculator-grid">
             <div id="output">
-                <div data-previous-calculator id="previous-calculator"></div>
-                <div data-current-calculator id="current-calculator"></div>
+                <div id="previous-calculator"></div>
+                <div id="current-calculator"></div>
             </div>
-            <button data-allClear class="two-spaces">AC</button>
-            <button data-clear>CE</button>
-            <button data-operation>÷</button>
-            <button data-number>7</button>
-            <button data-number>8</button>
-            <button data-number>9</button>
-            <button data-operation>x</button>
-            <button data-number>4</button>
-            <button data-number>5</button>
-            <button data-number>6</button>
-            <button data-operation>-</button>
-            <button data-number>1</button>
-            <button data-number>2</button>
-            <button data-number>3</button>
-            <button data-operation>+</button>
-            <button data-number>.</button>
-            <button data-number>0</button>
-            <button data-equal class="two-span">=</button>
+            <button id="two-spaces" onclick="AllClear()">AC</button>
+            <button onclick="ClearEntity()">CE</button>
+            <button onclick="output('÷')">÷</button>
+            <button onclick="output('7')">7</button>
+            <button onclick="output('8')">8</button>
+            <button onclick="output('9')">9</button>
+            <button onclick="output('x')">x</button>
+            <button onclick="output('4')">4</button>
+            <button onclick="output('5')">5</button>
+            <button onclick="output('6')">6</button>
+            <button onclick="output('-')">-</button>
+            <button onclick="output('1')">1</button>
+            <button onclick="output('2')">2</button>
+            <button onclick="output('3')">3</button>
+            <button onclick="output('+')">+</button>
+            <button onclick="output('.')">.</button>
+            <button onclick="output('0')">0</button>
+            <button id="two-span">=</button>
         </div>
     </div>
 </body>

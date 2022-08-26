@@ -33,11 +33,11 @@ body {
     transition: background-color 1s; /*https://stackoverflow.com/questions/23458362/how-to-delay-background-color-transition-using-css*/
 }
 
-.two-spaces {
+#two-spaces {
     grid-column: span 2;
 }
 
-.two-span {
+#two-span {
     grid-column: span 2;
 }
 
